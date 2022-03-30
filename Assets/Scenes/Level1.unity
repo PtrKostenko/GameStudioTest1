@@ -991,8 +991,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Borders:
-    m_Center: {x: 0, y: 5, z: 0}
-    m_Extent: {x: 200, y: 10, z: 200}
+    m_Center: {x: -5.790428, y: 5, z: 17.934153}
+    m_Extent: {x: 24.417702, y: 10, z: 39.543144}
 --- !u!114 &674230723
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,6 +18,13 @@ namespace GameStudioTest1
             return newPos;
         }
 
+        public Vector3 GetPossiblePosition(Vector3 vector)
+        {
+            var newPos = transform.position;
+            newPos += vector * _speed * Time.deltaTime;
+            return newPos;
+        }
+
         public Vector3 Forward()
         {
             return Move(transform.forward);

@@ -127,7 +127,11 @@ namespace GameStudioTest1
             Vector2 inputAxis = _input.GetMoveAxis();
             Vector3 moveAxis = new Vector3(inputAxis.x, 0, inputAxis.y);
 
-            ActivePlayerUnit.Move(moveAxis);
+            if (_levelArea.IsInsideArea(ActivePlayerUnit.GetPossiblePosition(moveAxis)))
+            {
+                ActivePlayerUnit.Move(moveAxis);
+
+            }
 
             if (_input.IsChangeUnitInput())
             {

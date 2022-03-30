@@ -14,6 +14,8 @@ namespace GameStudioTest1
             _movement = GetComponent<Movement>();
         }
 
-        public void Move(Vector3 vector) => _movement.Move(vector);
+        public Vector3 Move(Vector3 vector) => _movement.Move(vector);
+        public Vector3 GetPossiblePosition(Vector3 vector) => _movement.GetPossiblePosition(vector);
+
     }
 }

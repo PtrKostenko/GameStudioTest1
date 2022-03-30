@@ -11,5 +11,10 @@ namespace GameStudioTest1
         {
             return Borders.Contains(unit.transform.position);
         }
+
+        public override bool IsInArea(Vector3 point)
+        {
+            return Borders.Contains(point);
+        }
     }
 }
